@@ -1,6 +1,10 @@
 Meteor Svelte Starter
 =====================
 
+// deploy cmd:
+
+DEPLOY_HOSTNAME=us-east-1.galaxy-deploy.meteor.com meteor deploy onepagerv1 --settings settings.json
+
 This is a starter project for Svelte on Meteor, produced by Kevin Newman (@CaptainN) at NP Dev LLC. It includes configuration for a few of the trickier things.
 
 ## Features

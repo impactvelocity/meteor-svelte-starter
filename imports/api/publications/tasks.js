@@ -9,11 +9,7 @@ if (Meteor.isServer) {
   // });
 
   Meteor.publish('tasks', function tasksPublication() {
-    return Tasks.find({
-      $or: [
-        { owner: this.userId },
-      ],
-    });
+    return Tasks.find({ "owner": { "$eq": this.userId } });
   });
 
 }

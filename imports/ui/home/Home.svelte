@@ -26,7 +26,7 @@
 	})
 
 	track(() => {
-		tasks = Tasks.find({}).fetch()
+		tasks = Tasks.find({ owner: { $eq: userId } }).fetch()
 	})
 
 	track(() => {

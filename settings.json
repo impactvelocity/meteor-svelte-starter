@@ -2,6 +2,7 @@
   "galaxy.meteor.com": {
     "env": {
       "MONGO_URL": "mongodb://adminv1:b1kxcd87@clusterv1-shard-00-00.hiwsf.mongodb.net:27017,clusterv1-shard-00-01.hiwsf.mongodb.net:27017,clusterv1-shard-00-02.hiwsf.mongodb.net:27017/onepager?ssl=true&replicaSet=atlas-x78mqk-shard-0&authSource=admin&retryWrites=true&w=majority",
+      "MONGO_OPLOG_URL": "mongodb://oploguser:b1kxcd87@clusterv1-shard-00-00.hiwsf.mongodb.net:27017,clusterv1-shard-00-01.hiwsf.mongodb.net:27017,clusterv1-shard-00-02.hiwsf.mongodb.net:27017/local?ssl=true&replicaSet=atlas-x78mqk-shard-0&authSource=admin&retryWrites=true&w=majority"
     }
   }
 }

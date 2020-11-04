@@ -5,35 +5,36 @@ import { Tracker } from 'meteor/tracker'
 import { check } from 'meteor/check'
 import SimpleSchema from 'simpl-schema'
 
-export const PageSchema = new SimpleSchema({
+export const TaskSchema = new SimpleSchema({
   title: {
     type: String,
     trim: false
   },
 
-  slug: {
-    type: String
+  complete: {
+    type: Boolean
   },
-
-  content: {
-    type: String,
-    trim: false
+  owner: {
+    type: String
   }
 }, {
   check,
   tracker: Tracker
 })
 
-export const Pages = new Mongo.Collection('pages')
+export const Tasks = new Mongo.Collection('tasks')
 
-Pages.attachSchema(PageSchema)
+Tasks.attachSchema(TaskSchema)
+
+// export const TasksOffline = Tasks
 
 // For SSR, we need to query the database directly.
 // This has security implications since it bypasses the publication checks!
-// export const Pages = Meteor.isServer
-//   ? Pages
-//   : new GroundDB.Ground.Collection('pages-offline')
+// export const TasksOffline = Meteor.isServer
+//   ? Tasks
+//   : new GroundDB.Ground.Collection('tasks-offline')
+
 
 // if (Meteor.isClient) {
-//   PagesOffline.observeSource(Pages.find())
+//   TasksOffline.observeSource(Tasks.find())
 // }

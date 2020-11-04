@@ -15,11 +15,13 @@
     "simpl-schema": "^1.5.9",
     "svelte": "^3.20.1",
     "svelte-loadable": "^1.4.0",
-    "svelte-routing": "^1.4.2"
+    "svelte-routing": "^1.4.2",
+    "tailwindcss": "^1.9.6"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+    "autoprefixer": "^10.0.1",
     "babel-eslint": "^10.1.0",
     "babel-plugin-lodash": "^3.3.4",
     "babel-plugin-transform-imports": "^2.0.0",
@@ -34,7 +36,9 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-svelte3": "^2.7.3",
-    "npdev-svelte-loadable-babel": "^1.0.0"
+    "npdev-svelte-loadable-babel": "^1.0.0",
+    "postcss": "^8.1.4",
+    "postcss-load-config": "^3.0.0"
   },
   "meteor": {
     "mainModule": {
